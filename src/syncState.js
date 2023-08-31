@@ -28,7 +28,7 @@ function s4() {
 }
 
 function guid() {
-    return `${s4()}${s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`;
+    return crypto.randomUUID ? crypto.randomUUD() : `${s4()}${s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`;
 }
 
 // generate current window unique id
